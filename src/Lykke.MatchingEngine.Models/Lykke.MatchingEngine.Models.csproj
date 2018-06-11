@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <AssemblyName>Lykke.MatchingEngine.Models</AssemblyName>
+    <PackageId>Lykke.MatchingEngine.Models</PackageId>
+    <PackageTags>Lykke MatchingEngine Models</PackageTags>
+    <PackageProjectUrl>https://github.com/LykkeCity/Lykke.MatchingEngine.Models</PackageProjectUrl>
+    <Authors>Lykke</Authors>
+    <Description>Lykke matching engine models for api anr rabbitMq exchanges</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright 2018 (c) Lykke Corp. All rights reserved.</Copyright>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <NeutralLanguage>en-001</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
