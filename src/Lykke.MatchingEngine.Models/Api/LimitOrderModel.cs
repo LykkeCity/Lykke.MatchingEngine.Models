@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Lykke.MatchingEngine.Models.Common;
 
 namespace Lykke.MatchingEngine.Models.Api
@@ -24,6 +24,6 @@ namespace Lykke.MatchingEngine.Models.Api
 
         public LimitOrderFeeModel Fee { get; set; }
 
-        public LimitOrderFeeModel[] Fees { get; set; } = Array.Empty<LimitOrderFeeModel>();
+        public IReadOnlyList<LimitOrderFeeModel> Fees { get; set; } = new List<LimitOrderFeeModel>(0);
     }
 }

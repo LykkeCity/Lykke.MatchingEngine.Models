@@ -1,4 +1,5 @@
-﻿using Lykke.MatchingEngine.Models.Common;
+﻿using System.Collections.Generic;
+using Lykke.MatchingEngine.Models.Common;
 
 namespace Lykke.MatchingEngine.Models.Api
 {
@@ -21,7 +22,7 @@ namespace Lykke.MatchingEngine.Models.Api
 
         public FeeSizeType TakerSizeType { get; set; }
 
-        public string[] AssetId { get; set; }
+        public IReadOnlyList<string> AssetId { get; set; }
 
         public double MakerFeeModificator { get; set; }
     }

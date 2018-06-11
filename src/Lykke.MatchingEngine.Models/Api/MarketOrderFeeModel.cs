@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Lykke.MatchingEngine.Models.Common;
 
 namespace Lykke.MatchingEngine.Models.Api
@@ -18,6 +18,6 @@ namespace Lykke.MatchingEngine.Models.Api
 
         public FeeSizeType SizeType { get; set; }
 
-        public string[] AssetId { get; set; } = Array.Empty<string>();
+        public IReadOnlyList<string> AssetId { get; set; } = new List<string>(0);
     }
 }
